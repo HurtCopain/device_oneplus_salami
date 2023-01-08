@@ -33,6 +33,11 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
 
+# FHD Overlay
+PRODUCT_PACKAGES += \
+    FhdResolutionOverlayFwb \
+    FhdResolutionOverlaySysUI
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
