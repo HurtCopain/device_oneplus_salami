@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Evolution X Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <string name="build_device_url">https://t.me/c/1568844482/4120</string>
+    <string name="build_maintainer_summary">Unofficial-Hurt Copain</string>
+
+</resources>
