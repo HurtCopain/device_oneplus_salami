@@ -11,10 +11,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from salami device
 $(call inherit-product, device/oneplus/salami/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_salami
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BUILD_APERTURE_CAMERA := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := true
+TARGET_SUPPORTS_TOUCHGESTURES := true
+
+WITH_GAPPS := true
+
+PRODUCT_BOARD_PLATFORM := sm8550
+
+PRODUCT_NAME := evolution_salami
 PRODUCT_DEVICE := salami
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
