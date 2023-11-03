@@ -22,6 +22,24 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
 TARGET_SUPPORTS_TOUCHGESTURES := true
 
+#Experimental Shit
+$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
+TARGET_SUPPORTS_PREBUILT_UPDATABLE_APEX := false
+TARGET_FLATTEN_APEX := false
+TARGET_INCLUDE_CAMERA_GO := true
+TARGET_SUPPORTS_LILY_EXPERIENCE := true
+TARGET_NOT_SUPPORTS_GOOGLE_BATTERY := true
+TARGET_GBOARD_KEY_HEIGHT := 1.1
+
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.camera.privapp.list=com.google.android.apps.cameralite \
+    persist.camera.privapp.list=com.google.android.apps.cameralite
+    
+#Even More Experimental Shit
+TARGET_INCLUDE_CARRIER_SETTINGS := true
+TARGET_INCLUDE_PIXEL_IMS := true
+TARGET_INCLUDE_PIXEL_EUICC := true
+
 WITH_GAPPS := true
 
 PRODUCT_BOARD_PLATFORM := sm8550
