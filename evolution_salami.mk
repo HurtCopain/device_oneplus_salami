@@ -21,6 +21,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_BLUR := true
 TARGET_SUPPORTS_TOUCHGESTURES := true
+TARGET_HAS_UDFPS := true
 
 #Experimental Shit
 $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
